@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*
+        * BOM:browser object Model 浏览器对象模型
+        * window--/navigator 导航
+        *         /frames
+        *         /-history
+        *         /-location
+        *         /-screen
+        *         /-document
+        *         一。window
+        *         1.window对象是客户端最高层对象
+        *         2.window对象代表当前打开的浏览器窗口
+        *         3.window是全局对象，它所在的书香与方法可以省略window
+        *
+        * */
+//        var a="s1";
+//        function fun1(){
+//            var b="s2";
+//            alert(a);//s1
+//        }
+//        alert(a);//s1
+//        alert(b);//报错
+
+
+//                var a="s1";
+//                function fun1(){
+//                     b="s2";//var如果被省略，该变量自己就提升为全局变量
+//                    alert(a);//s1
+//                }
+////        fun1();//s1 s1 s2
+//                alert(a);
+//                alert(b);
+//        fun1();//s1   报错
+
+
+
+//        var a="s1";
+//        function fun1(){
+//             a="s2";
+//            alert(a);//s2
+//        }
+//        fun1();
+//        alert(a);//s2
+
+
+
+//                var a="s1";
+//                function fun1(){
+//                    var a="s2";
+//                    alert(a);//s2
+//                }
+//        fun1();
+//                alert(a);//s1
+
+
+
+//预编译
+
+//        var a="s1";
+//        function fun1(){
+//            alert(a);//underfined
+//            var a="s2";
+//            alert(a);//s2
+//
+//        }
+//        fun1();
+//        alert(a);//s1
+
+
+
+
+
+        /*
+        * 4.打开新窗口open
+        * var o1=window.open("1.html","新窗口"，width=300px.height=300px);
+        * o1.close;
+        * window.close();
+        *innerContent 火狐低版本
+        * */
+//        var o1=window.open("1.html","新窗口","width=300px,height=300px");
+//        function fun1(){
+//            o1.document.getElementById("sel_div").innerText="你好，自爽口";
+//        }
+//if(o1==null){
+//    alert("新窗口被栏截，请打开")
+//}
+/*
+* 5.对话框
+* window.alert();  消息提示框
+* prompt();      消息输入框
+* confirm();      消息确认框
+*
+* 6.setInterval();间歇调用  指定时间间隔重复执行代码
+*                 问题:有时后一个间歇调用会在前一个间歇调用之前结束
+* setTimeout();超时调用  指定时间过后执行代码
+*
+* */
+//        var n=0;
+//        var timer;
+//        function fun1(){
+//            n++;
+//            if(n==5){
+//                clearInterval(timer);
+//            }
+//            alert(n);
+//        }
+//       timer=setInterval(fun1,1000)
+
+//        var n=0;
+//        var timer;
+//        function fun1(){
+//            n++;
+//            if(n<5){
+//               setTimeout(fun1,1000)
+//            }
+//            alert(n);
+//        }
+//            timer=setTimeout(fun1,1000);
+
+/*
+* 7.window.status   状态栏
+*
+*
+* */
+//        window.status="hello llllllll";
+//        var flag=0;
+//        function fun1(){
+//            if(flag==0){
+//                window.status="hello llllllll";
+//                flag=1
+//            }else{
+//                window.status="";
+//                flag=0;
+//            }
+//        }
+//        setInterval(fun1,1000);
+
+
+//window.print();
+
+    </script>
+</head>
+<body class="aa">
+<button onclick="fun1()">确定</button><br><br>
+子窗口传回数据:<div id="fa_div"></div>
+</body>
+</html>

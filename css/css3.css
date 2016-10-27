@@ -1,0 +1,30 @@
+.d0{
+    width:400px;
+    height:150px;
+    background: darkgray;
+}
+.d1{
+    font-size: 20px;
+    /*color:black;*/
+}
+.a1{
+    background: red;
+    display: inline-block;
+    width:20px;
+    height:20px;
+    color:white;
+}
+.img1{
+    float:left;
+
+
+}
+.d2{
+    width:200px;
+    color:gray;
+    float:left;
+}
+.a2{
+color:black;
+    font-size: 15px;
+}
